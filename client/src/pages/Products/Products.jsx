@@ -10,13 +10,11 @@ import MinCategory from "../../components/MinCategory";
 import Product from "./Product";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import StarIcon from "@mui/icons-material/Star";
 import { categories } from "../../utils/constants";
 import { useLocation } from "react-router-dom";
 import { toast } from "react-toastify";
 import Spinner from "./../../components/Spinner";
 import axios from "axios";
-import SeoData from "../../SEO/SeoData";
 
 const Products = () => {
     const location = useLocation();
@@ -57,7 +55,7 @@ const Products = () => {
 
     // filter toggles
     const [categoryToggle, setCategoryToggle] = useState(true);
-    const [ratingsToggle, setRatingsToggle] = useState(true);
+
 
     const priceHandler = (e, newPrice) => {
         setPrice(newPrice);
@@ -115,7 +113,6 @@ const Products = () => {
 
     return (
         <>
-            <SeoData title="All Products | Flipkart" />
 
             <MinCategory />
             <main className="w-full pt-2 pb-5 sm:mt-0">
@@ -228,7 +225,7 @@ const Products = () => {
                                 {/* category filter */}
 
                                 {/* ratings filter */}
-                                <div className="flex flex-col border-b px-4 -mb-4">
+                                {/* <div className="flex flex-col border-b px-4 -mb-4">
                                     <div
                                         className="flex justify-between cursor-pointer py-2 pb-4 items-center"
                                         onClick={() =>
@@ -290,7 +287,7 @@ const Products = () => {
                                             </FormControl>
                                         </div>
                                     )}
-                                </div>
+                                </div> */}
                                 {/* ratings filter */}
                             </div>
                         </div>

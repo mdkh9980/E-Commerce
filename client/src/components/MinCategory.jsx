@@ -2,16 +2,15 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Link } from "react-router-dom";
 
 const categories = [
-    "Electronics",
-    "TVs & Appliances",
-    "Men",
-    "Women",
-    "Baby & Kids",
-    "Home & Furniture",
-    "Sports, Books & More",
-    "Flights",
-    "Offer Zone",
-    "Grocery",
+    "Shirts",
+    "Trousers",
+    "Jackets",
+    "Shoes",
+    "Kids Jackets",
+    "T-Shirts",
+    "Kids Shirts",
+    "Kids Shoes",
+    "Kids Lower",
 ];
 
 const MinCategory = () => {

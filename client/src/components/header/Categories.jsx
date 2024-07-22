@@ -1,50 +1,52 @@
-import mobiles from "../../assets/images/Categories/phone.png";
-import fashion from "../../assets/images/Categories/fashion.png";
-import electronics from "../../assets/images/Categories/electronics.png";
-import home from "../../assets/images/Categories/home.png";
-import travel from "../../assets/images/Categories/travel.png";
-import appliances from "../../assets/images/Categories/appliances.png";
-import furniture from "../../assets/images/Categories/furniture.png";
-import beauty from "../../assets/images/Categories/beauty.png";
-import grocery from "../../assets/images/Categories/grocery.png";
+
+import MenShirts from "../../assets/images/Categories/MenShirts.jpeg";
+import MenShoes from "../../assets/images/Categories/MenShoes.jpeg";
+import KidShoes from "../../assets/images/Categories/KidShoes.jpeg";
+import MenTShirt from "../../assets/images/Categories/MenTShirt.jpeg";
+import MenJacket from "../../assets/images/Categories/MenJacket.jpeg";
+import KidsJacket from "../../assets/images/Categories/KidsJacket.jpeg";
+import MenPant from "../../assets/images/Categories/MenPant.jpeg";
+import KidsPant from "../../assets/images/Categories/KidsPant.jpeg";
+import KidsShirt from "../../assets/images/Categories/KidsShirt.jpeg";
+
 import { Link } from "react-router-dom";
 
 const catNav = [
     {
-        name: "Mobiles",
-        icon: mobiles,
+        name: "Shirts",
+        icon: MenShirts,
     },
     {
-        name: "Fashion",
-        icon: fashion,
+        name: "Trousers",
+        icon: MenPant,
     },
     {
-        name: "Electronics",
-        icon: electronics,
+        name: "Shoes",
+        icon: MenShoes,
     },
     {
-        name: "Home",
-        icon: home,
+        name: "T Shirts",
+        icon: MenTShirt,
     },
     {
-        name: "Travel",
-        icon: travel,
+        name: "Jackets",
+        icon: MenJacket,
     },
     {
-        name: "Appliances",
-        icon: appliances,
+        name: "Kids Shirt",
+        icon: KidsShirt,
     },
     {
-        name: "Furniture",
-        icon: furniture,
+        name: "Kids Lower",
+        icon: KidsPant,
     },
     {
-        name: "Beauty,Toys & more",
-        icon: beauty,
+        name: "Kids Jacket",
+        icon: KidsJacket,
     },
     {
-        name: "Grocery",
-        icon: grocery,
+        name: "Kids Shoes",
+        icon: KidShoes,
     },
 ];
 

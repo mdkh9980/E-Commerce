@@ -12,7 +12,6 @@ import axios from "axios";
 
 //payment using stripe
 import { loadStripe } from "@stripe/stripe-js";
-import SeoData from "../../../SEO/SeoData";
 import PriceCard from "./PriceCard";
 
 const Shipping = () => {
@@ -89,7 +88,6 @@ const Shipping = () => {
 
     return (
         <>
-            <SeoData title="Flipkart: Shipping Details" />
             <main className="w-full pt-8">
                 {/* <!-- row --> */}
 

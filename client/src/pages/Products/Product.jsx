@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import StarIcon from "@mui/icons-material/Star";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { Link } from "react-router-dom";
 import { getDiscount } from "../../utils/functions";
@@ -13,8 +12,6 @@ const Product = ({
     _id,
     images,
     name,
-    ratings,
-    numOfReviews,
     price,
     discountPrice,
 }) => {
@@ -144,7 +141,7 @@ const Product = ({
                                 : name}
                         </h2>
                         {/* <!-- rating badge --> */}
-                        <span className="text-sm text-gray-500 font-medium flex gap-2 items-start justify-between">
+                        {/* <span className="text-sm text-gray-500 font-medium flex gap-2 items-start justify-between">
                             <span className="text-xs px-1.5 py-0.5 bg-[#22ba20] rounded-sm text-white flex items-center gap-0.5">
                                 {ratings.toFixed(1)}
                                 <StarIcon sx={{ fontSize: "14px" }} />
@@ -158,7 +155,7 @@ const Product = ({
                                     alt={name}
                                 />
                             </span>
-                        </span>
+                        </span> */}
                         {/* <!-- rating badge --> */}
 
                         {/* <!-- price container --> */}

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { useAuth } from "../context/auth";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -267,47 +266,6 @@ const UserProfile = () => {
                             </button>
                         )}
                     </div>
-                </div>
-                {/* FAQ section */}
-                <div>
-                    <h3 className="text-[16px] font-[600] mt-4">FAQs</h3>
-                    <div className="mt-4">
-                        <h5 className="text-[14px] font-[500]">
-                            What happens when I update my email address (or
-                            mobile number)?
-                        </h5>
-                        <p className="text-[12px] text-slate-500 mt-2">
-                            Your login email id (or mobile number) changes,
-                            likewise. You&apos;ll receive all your account related
-                            communication on your updated email address (or
-                            mobile number).
-                        </p>
-                    </div>
-                    <div className="mt-4">
-                        <h5 className="text-[14px] font-[500]">
-                            When will my Flipkart account be updated with the
-                            new email address (or mobile number)?
-                        </h5>
-                        <p className="text-[12px] text-slate-500 mt-2">
-                            It happens as soon as you confirm the verification
-                            code sent to your email (or mobile) and save the
-                            changes.
-                        </p>
-                    </div>
-                    <div className="mt-4">
-                        <h5 className="text-[14px] font-[500]">
-                            Does my Seller account get affected when I update my
-                            email address?
-                        </h5>
-                        <p className="text-[12px] text-slate-500 mt-2">
-                            Flipkart has a single sign-on policy. Any changes
-                            will reflect in your Seller account also.
-                        </p>
-                    </div>
-                </div>
-                {/* deactivate account */}
-                <div className="text-[14px] text-primaryBlue font-[500] mt-4 -mb-4">
-                    <Link to="./deactivate">Deactivate Account</Link>
                 </div>
             </div>
             {/* image section */}

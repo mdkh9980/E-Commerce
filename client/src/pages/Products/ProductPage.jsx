@@ -3,15 +3,10 @@ import { toast } from "react-toastify";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Slider from "react-slick";
 import { NextBtn, PreviousBtn } from "../Home/Banner/Banner";
-import ProductSlider from "../Home/ProductsListing/ProductSlider";
 import Spinner from "../../components/Spinner";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FlashOnIcon from "@mui/icons-material/FlashOn";
 import StarIcon from "@mui/icons-material/Star";
-import LocalOfferIcon from "@mui/icons-material/LocalOffer";
-import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
-import CachedIcon from "@mui/icons-material/Cached";
-import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
@@ -19,12 +14,9 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import Rating from "@mui/material/Rating";
 import TextField from "@mui/material/TextField";
-import { getDeliveryDate, getDiscount } from "../../utils/functions";
 import MinCategory from "../../components/MinCategory";
 import axios from "axios";
 import { useAuth } from "../../context/auth";
-import { fashionProducts } from "../../utils/fashion";
-import { electronicProducts } from "../../utils/electronics";
 import ScrollToTopOnRouteChange from "../../utils/ScrollToTopOnRouteChange";
 import { useCart } from "../../context/cart";
 import SeoData from "../../SEO/SeoData";
@@ -282,7 +274,7 @@ const ProductDetails = () => {
                                                         ? goToCart
                                                         : addToCartHandler
                                                 }
-                                                className="p-2 sm:p-4 w-1/2 flex items-center justify-center gap-2 text-white bg-[#ff9f00] rounded-sm shadow hover:shadow-lg"
+                                                className="p-2 sm:p-4 w-1/2 flex items-center justify-center gap-2 text-white bg-black rounded-sm shadow hover:shadow-lg"
                                             >
                                                 <ShoppingCartIcon />
                                                 {itemInCart
@@ -297,8 +289,8 @@ const ProductDetails = () => {
                                             }
                                             className={
                                                 product.stock < 1
-                                                    ? "p-4 w-full flex items-center justify-center gap-2 text-white bg-red-600 cursor-not-allowed rounded-sm shadow hover:shadow-lg"
-                                                    : "p-4 w-1/2 flex items-center justify-center gap-2 text-white bg-[#fb641b] rounded-sm shadow hover:shadow-lg"
+                                                    ? "p-4 w-full flex items-center justify-center gap-2 text-white bg-black cursor-not-allowed rounded-sm shadow hover:shadow-lg"
+                                                    : "p-4 w-1/2 flex items-center justify-center gap-2 text-white bg-black rounded-sm shadow hover:shadow-lg"
                                             }
                                         >
                                             <FlashOnIcon />
@@ -320,29 +312,29 @@ const ProductDetails = () => {
                                     <h2 className="text-xl">{product?.name}</h2>
                                     {/* <!-- rating badge --> */}
                                     <span className="text-md text-gray-500 font-medium flex gap-2 items-center">
-                                        <span className="text-xs px-1.5 py-0.5 bg-primaryGreen rounded-sm text-white flex items-center gap-0.5">
+                                        {/* <span className="text-xs px-1.5 py-0.5 bg-primaryGreen rounded-sm text-white flex items-center gap-0.5">
                                             {product?.ratings?.toFixed(1)}
                                             <StarIcon
                                                 sx={{ fontSize: "12px" }}
                                             />
-                                        </span>
-                                        <span>
+                                        </span> */}
+                                        {/* <span>
                                             {product?.numOfReviews} Reviews
-                                        </span>
-                                        <span className="w-[80px] object-contain">
+                                        </span> */}
+                                        {/* <span className="w-[80px] object-contain">
                                             <img
                                                 src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
                                                 alt="f-assured"
                                             />
-                                        </span>
+                                        </span> */}
                                     </span>
                                     {/* <!-- rating badge --> */}
 
                                     {/* <!-- price desc --> */}
                                     <div className="flex flex-col text-3xl">
-                                        <span className="text-primaryGreen text-sm font-medium">
+                                        {/* <span className="text-primaryGreen text-sm font-medium">
                                             Special Price
-                                        </span>
+                                        </span> */}
                                         <div className="flex items-baseline gap-2 text-3xl font-medium">
                                             <span className="text-gray-800">
                                                 ₹
@@ -352,26 +344,26 @@ const ProductDetails = () => {
                                                 ₹
                                                 {product?.price?.toLocaleString()}
                                             </span>
-                                            <span className="text-base text-primaryGreen">
+                                            {/* <span className="text-base text-primaryGreen">
                                                 {getDiscount(
                                                     product?.price,
                                                     product?.discountPrice
                                                 )}
                                                 %&nbsp;off
-                                            </span>
+                                            </span> */}
                                         </div>
                                     </div>
-                                    {product?.stock <= 10 &&
+                                    {/* {product?.stock <= 10 &&
                                         product?.stock > 0 && (
                                             <span className="text-red-500 text-sm font-medium">
                                                 Hurry, Only {product.stock}{" "}
                                                 left!
                                             </span>
-                                        )}
+                                        )} */}
                                     {/* <!-- price desc --> */}
 
                                     {/* <!-- banks offers --> */}
-                                    <p className="text-md font-[600]">
+                                    {/* <p className="text-md font-[600]">
                                         Available offers
                                     </p>
 
@@ -408,7 +400,7 @@ const ProductDetails = () => {
                                                 </span>
                                             </span>
                                         </p>
-                                    ))}
+                                    ))} */}
                                     {/* <!-- banks offers --> */}
 
                                     {/* <!-- warranty & brand --> */}
@@ -424,17 +416,17 @@ const ProductDetails = () => {
                                                 ? "No Warranty"
                                                 : `${product?.warranty} Year Brand Warranty`}
                                         </span>
-                                        <Link
+                                        {/* <Link
                                             className="font-medium text-primaryBlue -ml-5"
                                             to="/"
                                         >
                                             Know More
-                                        </Link>
+                                        </Link> */}
                                     </div>
                                     {/* <!-- warranty & brand --> */}
 
                                     {/* <!-- delivery details --> */}
-                                    <div className="flex gap-16 mt-4 items-center text-sm font-medium">
+                                    {/* <div className="flex gap-16 mt-4 items-center text-sm font-medium">
                                         <p className="text-gray-500">
                                             Delivery
                                         </p>
@@ -442,7 +434,7 @@ const ProductDetails = () => {
                                             Delivery by {getDeliveryDate()} | ₹
                                             40
                                         </span>
-                                    </div>
+                                    </div> */}
                                     {/* <!-- delivery details --> */}
 
                                     {/* <!-- highlights & services details --> */}
@@ -466,7 +458,7 @@ const ProductDetails = () => {
                                         {/* <!-- highlights details --> */}
 
                                         {/* <!-- services details --> */}
-                                        <div className="flex gap-16 mt-4 mr-6 items-stretch text-sm">
+                                        {/* <div className="flex gap-16 mt-4 mr-6 items-stretch text-sm">
                                             <p className="text-gray-500 font-medium">
                                                 Services
                                             </p>
@@ -514,7 +506,7 @@ const ProductDetails = () => {
                                                     </p>
                                                 </li>
                                             </ul>
-                                        </div>
+                                        </div> */}
                                         {/* <!-- services details --> */}
                                     </div>
                                     {/* <!-- highlights & services details --> */}
@@ -530,17 +522,6 @@ const ProductDetails = () => {
                                         </Link>
                                     </div>
                                     {/* <!-- seller details --> */}
-
-                                    {/* <!-- flipkart plus banner --> */}
-                                    <div className="sm:w-1/2 mt-4 border">
-                                        <img
-                                            draggable="false"
-                                            className="w-full h-full object-contain"
-                                            src="https://rukminim1.flixcart.com/lockin/763/305/images/promotion_banner_v2_active.png"
-                                            alt="flipkart plus"
-                                        />
-                                    </div>
-                                    {/* <!-- flipkart plus banner --> */}
 
                                     {/* <!-- description details --> */}
                                     <div className="flex flex-col sm:flex-row gap-1 sm:gap-14 mt-4 items-stretch text-sm">
@@ -720,15 +701,15 @@ const ProductDetails = () => {
                         {/* <!-- product image & description container --> */}
 
                         {/* Sliders */}
-                        <div className="flex flex-col gap-3 mt-6">
+                        {/* <div className="flex flex-col gap-3 mt-6">
                             <ProductSlider
                                 title={"Recommendation"}
                                 products={[
                                     ...fashionProducts,
-                                    ...electronicProducts,
+                                    ...mensShoes,
                                 ]}
                             />
-                        </div>
+                        </div> */}
                     </main>
                 </>
             )}

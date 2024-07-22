@@ -6,7 +6,6 @@ import MinCategory from "../../../components/MinCategory";
 import Spinner from "../../../components/Spinner";
 import axios from "axios";
 import { useAuth } from "../../../context/auth";
-import SeoData from "../../../SEO/SeoData";
 
 const Orders = () => {
     const [auth] = useAuth();
@@ -41,7 +40,6 @@ const Orders = () => {
 
     return (
         <>
-            <SeoData title="My Orders | Flipkart" />
 
             <MinCategory />
             <main className="w-full px-4 sm:px-10 py-4 ">

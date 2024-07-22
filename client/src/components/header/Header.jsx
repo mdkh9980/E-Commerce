@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState, useRef, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo1.png";
 import { BiHomeSmile } from "react-icons/bi";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { BsCart2, BsBox } from "react-icons/bs";

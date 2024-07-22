@@ -11,7 +11,6 @@ import axios from "axios";
 import FormData from "form-data";
 import { useAuth } from "../../context/auth";
 import ScrollToTopOnRouteChange from "./../../utils/ScrollToTopOnRouteChange";
-import SeoData from "../../SEO/SeoData";
 
 const CreateProduct = () => {
     const [auth] = useAuth();
@@ -111,8 +110,8 @@ const CreateProduct = () => {
                 toast.warning("Please Add Brand Logo");
                 return;
             }
-            if (specs.length <= 1) {
-                toast.warning("Please Add Minimum 2 Specifications");
+            if (specs.length <= 0) {
+                toast.warning("Please Add Minimum 1 Specifications");
                 return;
             }
             if (images.length <= 0) {
@@ -177,7 +176,6 @@ const CreateProduct = () => {
 
     return (
         <>
-            <SeoData title="New Product | Flipkart" />
             <ScrollToTopOnRouteChange />
 
             {isSubmit ? (

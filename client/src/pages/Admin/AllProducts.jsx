@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { DataGrid } from "@mui/x-data-grid";
 import Rating from "@mui/material/Rating";
 import Actions from "./Actions";
-import SeoData from "../../SEO/SeoData";
+// import SeoData from "../../SEO/SeoData";
 
 const AllProducts = () => {
     const [auth] = useAuth();
@@ -186,7 +186,6 @@ const AllProducts = () => {
     });
     return (
         <div className="relative p-2 w-full h-full">
-            <SeoData title="All Products -  Seller Flipkart" />
 
             {loading ? (
                 <Spinner />

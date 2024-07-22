@@ -1,15 +1,15 @@
 import React from "react";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo1.png";
 
 const Footer = () => (
     <footer className="w-full text-white bg-[#212121]">
         <div className="container flex flex-col flex-wrap px-5 py-16 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
-            <div className="flex-shrink-0 mx-auto text-center md:mx-0 md:text-left">
+            <div className="flex-shrink-0 mx-auto text-center md:mx-0 md:text-left justify-center align-center">
                 <figure>
                     <img src={logo} alt="logo" />
                 </figure>
 
-                <div className="mt-4 ">
+                {/* <div className="mt-4 ">
                     <span className="inline-flex justify-center mt-2 sm:ml-3 sm:mt-0 sm:justify-start">
                         <a className="text-gray-500 cursor-pointer hover:text-blue">
                             <svg
@@ -79,9 +79,9 @@ const Footer = () => (
                             </svg>
                         </a>
                     </span>
-                </div>
+                </div> */}
             </div>
-            <div className="md:flex md:flex-wrap md:flex-grow grid grid-cols-2 mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+            {/* <div className="md:flex md:flex-wrap md:flex-grow grid grid-cols-2 mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
                 <div className="w-full px-4 lg:w-1/4 md:w-1/2">
                     <h2 className="mb-3 text-sm font-medium tracking-widest text-[#878787] uppercase ">
                         About
@@ -170,13 +170,12 @@ const Footer = () => (
                         </li>
                     </nav>
                 </div>
-            </div>
+            </div> */}
         </div>
         <div className="container px-5 pb-5 mx-auto text-center">
             <a href="https://www.linkedin.com/in/aashish-dhiman/">
                 <p className="text-md text-gray-700 capitalize xl:text-center">
-                    © {new Date().getFullYear()} All rights reserved - Aashish
-                    Dhiman
+                    © {new Date().getFullYear()} All rights reserved - MD Hussain
                 </p>
             </a>
         </div>

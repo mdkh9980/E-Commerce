@@ -163,7 +163,7 @@ const AdminMenu = () => {
                         </button>
                     </div>
                 </div>
-                <div className="flex flex-col items-start gap-2 p-4 bg-white rounded-sm shadow">
+                {/* <div className="flex flex-col items-start gap-2 p-4 bg-white rounded-sm shadow">
                     <span className="text-xs font-medium">
                         Frequently Visited:
                     </span>
@@ -172,7 +172,7 @@ const AdminMenu = () => {
                         <Link to="/admin/orders">Track Order</Link>
                         <Link to="/">Help Center</Link>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

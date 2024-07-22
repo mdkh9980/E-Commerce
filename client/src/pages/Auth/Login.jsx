@@ -1,5 +1,5 @@
 import { useState } from "react";
-import authImg from "../../assets/images/auth.png";
+// import authImg from "../../assets/images/auth.png";
 import axios from "axios";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
@@ -87,7 +87,7 @@ const Login = () => {
                 <div className="container bg-primaryBg mt-5 sm:mt-0 md:mt-0 lg:mt-0 py-[2px]">
                     <div className="flex items-center flex-col sm:flex-row md:flow-row lg:flex-row my-10 mx-auto w-full sm:w-[70vw] md:w-[70vw] lg:w-[70vw] min-h-[400px] md:h-[80vh] lg:h-[80vh] bg-white shadow-[0px_0px_8px_2px_rgba(212,212,212,0.6)] ">
                         {/* left view  */}
-                        <div className=" w-full md:w-[40%] lg:w-[40%] h-full bg-primaryBlue">
+                        <div className=" w-full md:w-[40%] lg:w-[40%] h-full bg-black">
                             <div className="flex gap-2 md:gap-6 flex-col h-full mt-5 md:mt-10 px-6 ">
                                 <div className="text-white leading-8 text-[22px] font-[600]">
                                     <h2>Log in</h2>
@@ -107,12 +107,12 @@ const Login = () => {
                                         <span>
                                             Admin <br />
                                         </span>
-                                        username - store@flipkart.com <br />
+                                        username - store@test.com <br />
                                         password - admin123
                                     </p>
                                 </div>
                                 <div className="">
-                                    <img src={authImg} alt="auth image" />
+                                    {/* <img src={authImg} alt="auth image" /> */}
                                 </div>
                             </div>
                         </div>
@@ -137,7 +137,7 @@ const Login = () => {
                                                 onChange={(e) =>
                                                     setEmail(e.target.value)
                                                 }
-                                                className="peer placeholder-transparent h-8 w-full border-b-2 text-gray-900 text-sm focus:outline-none focus:border-blue-400"
+                                                className="peer placeholder-transparent h-8 w-full border-b-2 text-gray-900 text-sm focus:outline-none focus:border-black-400"
                                                 placeholder="Email address"
                                                 required
                                                 pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" // Email pattern
@@ -164,7 +164,7 @@ const Login = () => {
                                                 onChange={(e) =>
                                                     setPassword(e.target.value)
                                                 }
-                                                className="peer placeholder-transparent h-8 w-full border-b-2 focus:border-blue-400 text-gray-900 focus:outline-none text-sm"
+                                                className="peer placeholder-transparent h-8 w-full border-b-2 focus:border-black-400 text-gray-900 focus:outline-none text-sm"
                                                 placeholder="Password"
                                                 required
                                                 minLength="5"
@@ -185,13 +185,6 @@ const Login = () => {
                                                 )}
                                             </span>
                                         </div>
-                                        <div className="text-[9px] text-slate-500 ">
-                                            <p>
-                                                By continuing, you agree to
-                                                Flipkart&apos;s Terms of Use and
-                                                Privacy Policy.
-                                            </p>
-                                        </div>
 
                                         <div className="relative flex flex-col">
                                             <button className="bg-orange uppercase text-white text-[14px] font-[500] rounded-sm px-2 py-1">
@@ -208,14 +201,6 @@ const Login = () => {
                                     className=" text-primaryBlue font-[500] text-[12px] "
                                 >
                                     Forgot Password ?
-                                </Link>
-                            </div>
-                            <div className="relative mt-4 w-full text-center">
-                                <Link
-                                    to="/register"
-                                    className=" text-primaryBlue font-[500] text-[12px] "
-                                >
-                                    New to Flipkart? Create an account
                                 </Link>
                             </div>
                         </div>

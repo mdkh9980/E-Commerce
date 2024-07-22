@@ -1,43 +1,51 @@
+import shirt1 from "../assets/images/Kids-Shirts/shirt1.jpeg"
+import shirt2 from "../assets/images/Kids-Shirts/shirt2.jpeg"
+import shirt3 from "../assets/images/Kids-Shirts/shirt3.jpeg"
+import shirt4 from "../assets/images/Kids-Shirts/shirt4.jpeg"
+import shirt5 from "../assets/images/Kids-Shirts/shirt5.jpeg"
+import shirt6 from "../assets/images/Kids-Shirts/shirt6.jpeg"
+import shirt7 from "../assets/images/Kids-Shirts/shirt7.jpeg"
+
 export const accessories = [
     {
-        image: "https://rukminim2.flixcart.com/image/400/400/jxz0brk0/stuffed-toy/n/t/s/4-feet-pink-very-beautiful-best-quality-for-special-gift-125-13-original-imafgv92puzkdytg.jpeg?q=70",
-        name: "Soft Toys",
+        image: shirt1,
+        name: "Adventure Squad",
         offer: "Upto 70% off",
         tag: "Grab Now",
     },
     {
-        image: "https://rukminim2.flixcart.com/image/400/400/acoustic-guitar/e/y/y/dd-380c-blk-jixing-original-imaeff94e9tczafp.jpeg?q=70",
-        name: "String Instruments",
+        image: shirt2,
+        name: "Dino Dreams",
         offer: "From ₹2499",
-        tag: "Guitars, Ukuleles & more",
+        tag: "See More",
     },
     {
-        image: "https://rukminim2.flixcart.com/image/400/400/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=70",
-        name: "Remote Control Toys",
+        image: shirt3,
+        name: "Rainbow Warriors",
         offer: "From ₹499",
         tag: "Buy Now",
     },
     {
-        image: "https://rukminim2.flixcart.com/image/400/400/l0o6nbk0/epilator/0/u/f/portable-2-in-1-pain-free-eyebrow-trimmer-facial-face-lips-nose-original-imagcdyvvjdzaehm.jpeg?q=70",
-        name: "Epilators",
+        image: shirt4,
+        name: "Space Explorers",
         offer: "Min 50% off",
         tag: "Top Rated",
     },
     {
-        image: "https://rukminim2.flixcart.com/image/400/400/xif0q/conditioner/o/3/r/-original-imagpbyhfz6qgz2m.jpeg?q=70",
-        name: "Hair Care & Accessory",
+        image: shirt5,
+        name: "Jungle Jamboree",
         offer: "Shop Now",
-        tag: "Dove",
+        tag: "Buy Now",
     },
     {
-        image: "https://rukminim2.flixcart.com/image/400/400/xif0q/nail-polish/c/a/1/non-transfer-waterproof-longlast-sensational-liquid-lipstick-original-imagqtrvjhyuuf76.jpeg?q=70",
-        name: "Nail Polish",
+        image: shirt6,
+        name: "Super Starz",
         offer: "From ₹99",
         tag: "Grab Now",
     },
     {
-        image: "https://rukminim2.flixcart.com/image/400/400/xif0q/hair-accessory/c/l/u/-original-imagqhqpwwhzmg4z.jpeg?q=70",
-        name: "Hair Accessory",
+        image: shirt7,
+        name: "Pirate Pals",
         offer: "Min 50% off",
         tag: "Buy Now",
     },

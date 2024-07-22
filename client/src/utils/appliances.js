@@ -1,11 +1,5 @@
 export const applianceProducts = [
     {
-        image: "https://rukminim2.flixcart.com/image/400/400/kfeamq80/refrigerator-new/c/t/h/468asmqs-na-marq-by-flipkart-original-imafvufgxpd8bged.jpeg?q=70",
-        name: "Marq Refrigerators",
-        offer: "From ₹8999",
-        tag: "Buy Now",
-    },
-    {
         image: "https://rukminim2.flixcart.com/image/400/400/xif0q/refrigerator-new/t/x/s/-original-imaghtghjcf67haj.jpeg?q=70",
         name: "Double Door Refrigerator",
         offer: "From ₹16129",

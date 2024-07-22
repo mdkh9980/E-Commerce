@@ -11,7 +11,7 @@ import axios from "axios";
 import FormData from "form-data";
 import { useAuth } from "../../context/auth";
 import ScrollToTopOnRouteChange from "./../../utils/ScrollToTopOnRouteChange";
-import SeoData from "../../SEO/SeoData";
+// import SeoData from "../../SEO/SeoData";
 
 const EditProduct = () => {
     const [auth] = useAuth();
@@ -222,7 +222,6 @@ const EditProduct = () => {
 
     return (
         <>
-            <SeoData title="New Product | Flipkart" />
             <ScrollToTopOnRouteChange />
 
             {isSubmit || loading ? (

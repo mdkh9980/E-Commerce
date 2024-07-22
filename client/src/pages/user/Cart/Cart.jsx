@@ -4,7 +4,6 @@ import EmptyCart from "./EmptyCart";
 import { useCart } from "../../../context/cart";
 import SaveForLater from "./SaveForLater";
 import ScrollToTopOnRouteChange from "./../../../utils/ScrollToTopOnRouteChange";
-import SeoData from "../../../SEO/SeoData";
 import PriceCard from "./PriceCard";
 
 const Cart = () => {
@@ -21,7 +20,6 @@ const Cart = () => {
     return (
         <>
             <ScrollToTopOnRouteChange />
-            <SeoData title="Shopping Cart | Flipkart.com" />
             <main className="w-full pt-5">
                 {/* <!-- row --> */}
                 <div className="flex flex-col sm:flex-row gap-3.5 w-full sm:w-11/12 mt-0 sm:mt-4 m-auto ">

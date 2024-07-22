@@ -7,7 +7,7 @@ import Spinner from "../../components/Spinner";
 import { useAuth } from "../../context/auth";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-import SeoData from "../../SEO/SeoData";
+// import SeoData from "../../SEO/SeoData";
 
 const UpdateOrders = () => {
     const params = useParams();
@@ -45,7 +45,7 @@ const UpdateOrders = () => {
         fetchOrders();
     }, [auth?.token, orderId, reload]);
 
-    const amount = UpdateOrders?.amount;
+    // const amount = UpdateOrders?.amount;
     const orderItems = UpdateOrders?.products;
     const buyer = UpdateOrders?.buyer;
     const paymentId = UpdateOrders?.paymentId;
@@ -74,7 +74,6 @@ const UpdateOrders = () => {
 
     return (
         <>
-            <SeoData title="Order Details | Flipkart" />
 
             <MinCategory />
             <main className="w-full py-2 sm:py-8">

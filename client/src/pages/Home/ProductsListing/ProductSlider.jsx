@@ -48,7 +48,7 @@ const ProductSlider = ({ title, products, logo }) => {
                     <h1 className="text-[22px] pt-5 font-medium">{title}</h1>
                     <Link
                         to="/products"
-                        className="bg-primaryBlue text-[12px] sm:text-[16px] font-medium text-white px-2 sm:px-5 py-1.5 sm:py-2.5 rounded-sm hover:shadow-md"
+                        className="bg-black text-[12px] sm:text-[16px] font-medium text-white px-2 sm:px-5 py-1.5 sm:py-2.5 rounded-sm hover:shadow-md"
                     >
                         VIEW ALL
                     </Link>

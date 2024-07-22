@@ -54,7 +54,6 @@ const OrderDetails = () => {
 
     return (
         <>
-            <SeoData title="Order Details | Flipkart" />
 
             <MinCategory />
             <main className="w-full py-2 sm:py-8">
