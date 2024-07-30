@@ -5,7 +5,6 @@ import axios from "axios";
 import { useAuth } from "../../../context/auth";
 import Spinner from "../../../components/Spinner";
 import { toast } from "react-toastify";
-import SeoData from "../../../SEO/SeoData";
 
 const Wishlist = () => {
     const [auth] = useAuth();
@@ -109,7 +108,6 @@ const Wishlist = () => {
     };
     return (
         <>
-            <SeoData title="My Wishlist" />
             <MinCategory />
 
             {isLoading ? (
@@ -117,7 +115,6 @@ const Wishlist = () => {
             ) : (
                 <div className="flex gap-3.5 w-full sm:w-11/12 sm:mt-4 m-auto pb-7">
                     <div className="flex-1 shadow bg-white">
-                        {/* <!-- wishlist container --> */}
                         <div className="flex flex-col">
                             <span className="font-medium text-lg px-4 sm:px-8 py-4 border-b">
                                 My Wishlist ({count})
@@ -164,7 +161,6 @@ const Wishlist = () => {
                                 </span>
                             )}
                         </div>
-                        {/* <!-- wishlist container --> */}
                     </div>
                 </div>
             )}

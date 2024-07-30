@@ -3,7 +3,6 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { Link } from "react-router-dom";
 import { getDiscount } from "../../utils/functions";
 import { useEffect, useState } from "react";
-import ScrollToTopOnRouteChange from "../../utils/ScrollToTopOnRouteChange";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { useAuth } from "../../context/auth";
@@ -102,7 +101,6 @@ const Product = ({
     };
     return (
         <>
-            <ScrollToTopOnRouteChange />
             <div className="relative">
                 {/* <!-- wishlist badge --> */}
                 <span

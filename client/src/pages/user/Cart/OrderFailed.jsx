@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
-import SeoData from "../../../SEO/SeoData";
 
 const OrderFailed = () => {
     const navigate = useNavigate();
@@ -23,7 +22,6 @@ const OrderFailed = () => {
 
     return (
         <>
-            <SeoData title={`Transaction Failed`} />
 
             <main className="w-full p-8">
                 {/* <!-- row --> */}

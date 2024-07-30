@@ -1,7 +1,7 @@
-import axios from "axios";
+
 import { useContext, createContext, useState, useEffect } from "react";
 import { toast } from "react-toastify";
-import Product from "./../pages/Home/Suggestions/Product";
+
 
 const CartContext = createContext();
 
@@ -31,18 +31,14 @@ const CartProvider = ({ children }) => {
         // console.log(existingItemIndex);
 
         if (existingItemIndex !== -1) {
-            // Create a copy of cartItems to avoid mutating state directly
             const updatedCartItems = [...cartItems];
 
-            // Update the quantity of the existing item
             updatedCartItems[existingItemIndex].quantity = quantity;
 
-            // Update the state with the new cart items
             localStorage.setItem("cart", JSON.stringify(updatedCartItems));
             setReload(!reload);
             // console.log("Updated cartItems:", updatedCartItems);
         } else {
-            // Update the state and local storage with the new cart items
             setCartItems([{ ...product, quantity }, ...cartItems]);
             localStorage.setItem(
                 "cart",
@@ -61,7 +57,6 @@ const CartProvider = ({ children }) => {
         const updatedCartItems = cartItems?.filter(
             (item) => item.productId !== product.productId
         );
-        // setCartItems(updatedCartItems);
         localStorage.setItem("cart", JSON.stringify(updatedCartItems));
         setReload(!reload);
     };
@@ -112,7 +107,6 @@ const CartProvider = ({ children }) => {
     );
 };
 
-//custom hook->
 const useCart = () => {
     return useContext(CartContext);
 };

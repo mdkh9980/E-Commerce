@@ -5,7 +5,6 @@ import { useCart } from "../../../context/cart";
 import { useAuth } from "../../../context/auth";
 import axios from "axios";
 import Spinner from "./../../../components/Spinner";
-import SeoData from "../../../SEO/SeoData";
 
 const OrderSuccess = () => {
     const navigate = useNavigate();
@@ -64,7 +63,6 @@ const OrderSuccess = () => {
 
     return (
         <>
-            <SeoData title={`Transaction Successful`} />
             <main className="w-full p-8 relative min-h-[60vh]">
                 {loading ? (
                     <Spinner />

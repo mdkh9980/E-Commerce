@@ -17,9 +17,7 @@ import TextField from "@mui/material/TextField";
 import MinCategory from "../../components/MinCategory";
 import axios from "axios";
 import { useAuth } from "../../context/auth";
-import ScrollToTopOnRouteChange from "../../utils/ScrollToTopOnRouteChange";
 import { useCart } from "../../context/cart";
-import SeoData from "../../SEO/SeoData";
 
 const ProductDetails = () => {
     const navigate = useNavigate();
@@ -216,8 +214,6 @@ const ProductDetails = () => {
                 <Spinner />
             ) : (
                 <>
-                    <SeoData title={product?.name} />
-                    <ScrollToTopOnRouteChange />
                     <MinCategory />
                     <main className="mt-12 sm:mt-0">
                         {/* <!-- product image & description container --> */}
@@ -312,21 +308,7 @@ const ProductDetails = () => {
                                     <h2 className="text-xl">{product?.name}</h2>
                                     {/* <!-- rating badge --> */}
                                     <span className="text-md text-gray-500 font-medium flex gap-2 items-center">
-                                        {/* <span className="text-xs px-1.5 py-0.5 bg-primaryGreen rounded-sm text-white flex items-center gap-0.5">
-                                            {product?.ratings?.toFixed(1)}
-                                            <StarIcon
-                                                sx={{ fontSize: "12px" }}
-                                            />
-                                        </span> */}
-                                        {/* <span>
-                                            {product?.numOfReviews} Reviews
-                                        </span> */}
-                                        {/* <span className="w-[80px] object-contain">
-                                            <img
-                                                src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
-                                                alt="f-assured"
-                                            />
-                                        </span> */}
+
                                     </span>
                                     {/* <!-- rating badge --> */}
 

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { DataGrid } from "@mui/x-data-grid";
 import Rating from "@mui/material/Rating";
 import Actions from "./Actions";
-// import SeoData from "../../SEO/SeoData";
+
 
 const AllProducts = () => {
     const [auth] = useAuth();

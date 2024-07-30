@@ -8,7 +8,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { useAuth } from "../../context/auth";
 import Spinner from "../../components/Spinner";
 import Cookies from "js-cookie";
-import SeoData from "../../SEO/SeoData";
 
 const Login = () => {
     //hooks->
@@ -77,10 +76,6 @@ const Login = () => {
     // display content
     return (
         <>
-            <SeoData
-                title="Log in - Existing User"
-                description="Log in with user details"
-            />
             {isSubmitting ? (
                 <Spinner />
             ) : (

@@ -7,7 +7,7 @@ import Spinner from "../../components/Spinner";
 import { useAuth } from "../../context/auth";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-// import SeoData from "../../SEO/SeoData";
+
 
 const UpdateOrders = () => {
     const params = useParams();

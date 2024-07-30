@@ -70,7 +70,7 @@ const AdminMenu = () => {
                             </div>
                         </NavLink>
 
-                        <NavLink
+                        {/* <NavLink
                             to="./pan"
                             onClick={scrollToTop}
                             className={({ isActive }) =>
@@ -82,7 +82,7 @@ const AdminMenu = () => {
                             <div className=" h-[40px] px-[60px] flex items-center hover:text-primaryBlue hover:bg-[#f1f3f5]">
                                 Pan Card
                             </div>
-                        </NavLink>
+                        </NavLink> */}
                     </div>
                 </div>
 

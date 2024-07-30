@@ -10,8 +10,6 @@ import Spinner from "../../components/Spinner";
 import axios from "axios";
 import FormData from "form-data";
 import { useAuth } from "../../context/auth";
-import ScrollToTopOnRouteChange from "./../../utils/ScrollToTopOnRouteChange";
-// import SeoData from "../../SEO/SeoData";
 
 const EditProduct = () => {
     const [auth] = useAuth();
@@ -222,7 +220,6 @@ const EditProduct = () => {
 
     return (
         <>
-            <ScrollToTopOnRouteChange />
 
             {isSubmit || loading ? (
                 <div className="relative h-full">

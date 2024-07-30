@@ -8,12 +8,10 @@ import AllProducts from "./AllProducts";
 import Users from "./Users";
 import Deactivate from "../Auth/Deactivate";
 import EditProduct from "./EditProduct";
-// import SeoData from "../../SEO/SeoData";
 
 const AdminDashboard = () => {
     return (
         <>
-            {/* <SeoData title="Admin Dashboard" /> */}
             <div className="px-[50px] py-[5px]">
                 <div className="flex text-[14px] mx-[50px] my-[40px] gap-6">
                     <div className="min-w-[30%]">

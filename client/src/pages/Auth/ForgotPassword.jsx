@@ -1,13 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
-// import authImg from "../../assets/images/auth.png";
 import axios from "axios";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import Spinner from "./../../components/Spinner";
-// import SeoData from "../../SEO/SeoData";
+// import {authImg} from "../../assets/images/"
+
 
 const ForgotPassword = () => {
     //hooks->
@@ -82,10 +82,6 @@ const ForgotPassword = () => {
     // display content
     return (
         <>
-            {/* <SeoData
-                title="Forgot Password - Existing User"
-                description="Forgot Password"
-            /> */}
 
             <div className="container bg-primaryBg mt-5 sm:mt-0 md:mt-0 lg:mt-0 py-[2px]">
                 <div className="flex items-center flex-col sm:flex-row md:flow-row lg:flex-row my-10 mx-auto w-full sm:w-[70vw] md:w-[70vw] lg:w-[70vw] min-h-[400px] md:h-[80vh] lg:h-[80vh] bg-white shadow-[0px_0px_8px_2px_rgba(212,212,212,0.6)] ">
@@ -102,7 +98,7 @@ const ForgotPassword = () => {
                                 </p>
                             </div>
                             <div className="mt-8">
-                                <img src={authImg} alt="auth image" />
+                                {/* <img src={authImg} alt="auth image" /> */}
                             </div>
                         </div>
                     </div>

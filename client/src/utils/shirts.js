@@ -6,7 +6,7 @@ import shirt5 from "../assets/images/Kids-Shirts/shirt5.jpeg"
 import shirt6 from "../assets/images/Kids-Shirts/shirt6.jpeg"
 import shirt7 from "../assets/images/Kids-Shirts/shirt7.jpeg"
 
-export const accessories = [
+export const shirts = [
     {
         image: shirt1,
         name: "Adventure Squad",

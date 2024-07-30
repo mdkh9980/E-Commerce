@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { useAuth } from "../../context/auth";
-import ScrollToTopOnRouteChange from "../../utils/ScrollToTopOnRouteChange";
 
 const Deactivate = () => {
     const navigate = useNavigate();
@@ -37,7 +36,6 @@ const Deactivate = () => {
     };
     return (
         <>
-            <ScrollToTopOnRouteChange />
             <div className="flex w-full items-start p-4 h-full ">
                 <div className="w-[50%] p-2 border-r-2 h-full">
                     <div>

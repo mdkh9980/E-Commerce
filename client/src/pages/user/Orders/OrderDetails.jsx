@@ -6,7 +6,6 @@ import MinCategory from "../../../components/MinCategory";
 import axios from "axios";
 import { useAuth } from "../../../context/auth";
 import Spinner from "../../../components/Spinner";
-import SeoData from "../../../SEO/SeoData";
 
 const OrderDetails = () => {
     const params = useParams();

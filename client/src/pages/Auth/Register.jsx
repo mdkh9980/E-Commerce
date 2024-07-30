@@ -8,7 +8,6 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Spinner from "../../components/Spinner";
 import Checkbox from "@mui/material/Checkbox";
-import SeoData from "../../SEO/SeoData";
 
 const Register = () => {
     const [name, setName] = useState("");
@@ -82,10 +81,7 @@ const Register = () => {
     return (
         //SEO
         <>
-            <SeoData
-                title="Sign up - New User"
-                description="Register new user with details"
-            />
+        
             {isSubmitting ? (
                 <Spinner />
             ) : (

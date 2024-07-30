@@ -4,7 +4,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import Spinner from "../../components/Spinner";
 import axios from "axios";
 import { useAuth } from "../../context/auth";
-// import SeoData from "../../SEO/SeoData";
 
 const AdminOrders = () => {
     const [auth] = useAuth();
